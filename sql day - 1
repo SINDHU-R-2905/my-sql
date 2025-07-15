@@ -9,3 +9,10 @@ department varchar(100)
 
 
 
+#insert values in the table:
+
+insert into student values ("john doe",23,"CSE");
+insert into student values("praveen",45,"ECE");
+insert into student values ("suresh ",34," ECE");
+
+
