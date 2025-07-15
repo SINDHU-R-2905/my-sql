@@ -6,3 +6,6 @@ create table student(
 age int,
 department varchar(100)
 )
+
+
+2.fruits table
