@@ -1,3 +1,5 @@
+2.fruits table
+
 create table fruits (
 name varchar (100),
 quantity varchar(10),
