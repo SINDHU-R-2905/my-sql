@@ -1,0 +1,8 @@
+1.student table
+
+
+create table student(
+ name varchar(100),
+age int,
+department varchar(100)
+)
