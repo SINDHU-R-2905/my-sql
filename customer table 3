@@ -19,5 +19,11 @@ insert into customer values ("richard newman",3,"2040 riverside road","sandiego"
 
 
 
+alter table customer 
+rename address TO customer_address 
+
+
+alter table customer add column mobile_number
+
 
 
