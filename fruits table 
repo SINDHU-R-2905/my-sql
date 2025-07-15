@@ -3,3 +3,9 @@ name varchar (100),
 quantity varchar(10),
 price int
 )
+
+#insert values into the fruits table:
+
+insert into fruits values ("Apple","50 KG",100);
+insert into fruits values("Grape","20 KG",250);
+insert into fruits values("Banana","25 KG",150);
