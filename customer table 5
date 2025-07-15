@@ -1,3 +1,60 @@
-7 How to show the all records? 
+7.How to show the all records? 
+
+
+create table customer (
+customer_name varchar (100),
+customer_id int,
+customer_address varchar (100),
+city varchar(100),
+state varchar(100),
+zip_code varchar (100)
+)
+
+insert into customer values("john anderson","CUST001", "123 maple street"," springfield","lllinois",62704);
+insert into customer values("priya sharma","CUST002","45 MG road","bangalur","karnataka",560001);
+insert into customer values("michael chen","CUST003", "789 pim avenue"," hyderabad","california",94107);
+
+insert into customer values("john doe",1,"392 sunset blvd","newyork","NT",10059);
+insert into customer values("mary smith",2,"6900 main street","san francisco "," CA",94032);
+insert into customer values ("richard newman",3,"2040 riverside road","sandiego","CA",92010);
+
+
+
+alter table customer 
+rename address TO customer_address 
+
+
+alter table customer add column mobile_number
+
+
+update customer 
+set mobile_number='9876543210'
+where customer_name='john anderson';
+update customer 
+set mobile_number='9876543210'
+where customer_name='priyasharma';
+update customer 
+set mobile_number='9876543210'
+where customer_name='michael chen';
+update customer 
+set mobile_number='9876543210'
+where customer_name='john doe';
+
+update customer 
+set mobile_number='9876543210'
+where customer_name='mary smith';
+update customer 
+set mobile_number='9876543210'
+where customer_name='richard newman';
+
+#Show the all records 
+
+select * from customer 
+
+#show specific column 
+
+select customer_name from customer 
+
+
 
 
