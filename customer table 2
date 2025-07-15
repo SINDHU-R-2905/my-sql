@@ -6,3 +6,8 @@ city varchar(100),
 state varchar(100),
 zip_code varchar (100)
 )
+
+insert into customer values("john anderson","CUST001", "123 maple street"," springfield","lllinois",62704);
+insert into customer values("priya sharma","CUST002","45 MG road","bangalur","karnataka",560001);
+insert into customer values("michael chen","CUST003", "789 pim avenue"," hyderabad","california",94107);
+
