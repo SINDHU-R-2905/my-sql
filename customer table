@@ -1,0 +1,23 @@
+3.how do you make a table in a database?
+
+
+customer(
+ 
+customer_Name, 
+customer_id,
+customer_address,
+city,
+state,
+zip_code
+)
+
+
+
+create table customer (
+customer_name varchar (100),
+customer_id int,
+customer_address varchar (100),
+city varchar(100),
+state varchar(100),
+zip_code varchar (100)
+)
