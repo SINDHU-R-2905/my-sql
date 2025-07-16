@@ -1,0 +1,19 @@
+8.update employee table 
+
+set 'Hourly_pa Y' to 150 for the employees in HR department 
+
+
+create table employee  (
+employee_id int,
+employee_name varchar (100),
+department varchar (100)
+);
+
+insert into employee values(1,"kayla thompson","sales",100);
+insert into employee values (2,"ethan chen","Hr",100);
+insert into employee values(3,"julia lee","operations",100);
+insert into employee values (4,"marcus garcia "," Hr",100);
+
+update employee 
+set hourly_pay='150';
+
