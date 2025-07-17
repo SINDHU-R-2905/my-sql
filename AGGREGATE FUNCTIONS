@@ -1,0 +1,71 @@
+1.SUM:
+
+create table student(
+student_name varchar(100),student_mark int,department varchar(100));
+insert into student values("PRAVEEN","1","CSE");
+insert into student values("MANOJ","2","MECH");
+insert into student values("KARTHI","3","ECE");
+insert into student values("RAJU","4","MECH");
+insert into student values("DEEPAK","5","CSE");
+
+select SUM(student_mark) from student;
+
+2.MAX:
+
+create table student(
+student_name varchar(100),student_mark int,department varchar(100));
+insert into student values("PRAVEEN","1","CSE");
+insert into student values("MANOJ","2","MECH");
+insert into student values("KARTHI","3","ECE");
+insert into student values("RAJU","4","MECH");
+insert into student values("DEEPAK","5","CSE");
+
+select MAX(student_mark) from student;
+
+3.MIN:
+
+create table student(
+student_name varchar(100),student_mark int,department varchar(100));
+insert into student values("PRAVEEN","1","CSE");
+insert into student values("MANOJ","2","MECH");
+insert into student values("KARTHI","3","ECE");
+insert into student values("RAJU","4","MECH");
+insert into student values("DEEPAK","5","CSE");
+
+select MIN(student_mark) from student;
+
+
+
+4.AVG:
+
+create table student(
+student_name varchar(100),student_mark int,department varchar(100));
+insert into student values("PRAVEEN","1","CSE");
+insert into student values("MANOJ","2","MECH");
+insert into student values("KARTHI","3","ECE");
+insert into student values("RAJU","4","MECH");
+insert into student values("DEEPAK","5","CSE");
+
+select AVG(student_mark) from student;
+
+
+5.COUNT:
+
+create table student(
+student_name varchar(100),student_mark int,department varchar(100));
+insert into student values("PRAVEEN","1","CSE");
+insert into student values("MANOJ","2","MECH");
+insert into student values("KARTHI","3","ECE");
+insert into student values("RAJU","4","MECH");
+insert into student values("DEEPAK","5","CSE");
+
+select COUNT(student_mark) from student;
+
+
+
+
+
+
+
+
+
