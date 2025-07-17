@@ -1,0 +1,36 @@
+1.write query to retrieve the department name and location of people who live in  location that start with 'S'
+
+ insert below velues in department table:
+  1 - human resources - los angeles
+  2 - research and development - san fransisco
+  3 - sales -  los angeles
+  4 - marketing - new york
+  5 - customer support - boston 
+  6 - finance - austin 
+  7 - IT support - seatle
+  8 - product management - san fransisco
+  9 - quality assurance - los angeles
+  10 - legal - boston
+
+
+  
+  create table department(
+  department_id int,
+  department_name varchar(100),
+  location varchar(100),
+  );
+
+  insert into department values('1','human resources','los angeles');
+  insert into department values('2','research and development','san fransisco');
+insert into department values('3','sales','los angeles');
+insert into department values('4','marketing','new york');
+insert into department values('5','customer support','boston');
+insert into department values('6','finance','austin');
+insert into department values('7',' IT support','seatle');
+insert into department values('8','product management','san fransisco');
+insert into department values('9','quality assurance','los angeles');
+insert into department values('10','legal','boston');
+
+select department_name,location
+  from departments 
+  where location like'S%';
