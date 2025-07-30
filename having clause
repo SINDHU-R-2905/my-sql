@@ -1,3 +1,9 @@
 1.find department with an average salary greater than $55000 or have more than two employees.
 
+
+select department
+from employee
+group by department
+having avg(salary) > 55000 or count (*)>2;
+
   
