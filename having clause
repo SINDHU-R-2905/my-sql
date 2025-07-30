@@ -1,5 +1,16 @@
 1.find department with an average salary greater than $55000 or have more than two employees.
 
+create table employee  (
+employee_id int,
+employee_name varchar (100),
+department varchar (100)
+);
+
+insert into employee values(1,"kayla thompson","sales",100);
+insert into employee values (2,"ethan chen","Hr",100);
+insert into employee values(3,"julia lee","operations",100);
+insert into employee values (4,"marcus garcia "," Hr",100);
+
 
 select department
 from employee
