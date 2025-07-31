@@ -1,2 +1,135 @@
 1.update student age 20 where student_id 101.
 
+create table student(
+student_name varchar(100),
+student_id int,
+student_age int);
+
+alter table student
+add column grade varchar (100);
+
+alter table student
+rename column grade to "final grade";
+
+
+insert into student (student_name,student_id,student_age,"final grade")values
+(101,"john doe",20,'A'),
+(102,"jane smith",21,'B'),
+(103,"bob johnson",22,'C'),
+(104,"alice brown",23,'D'),
+(105,"charlie davis",24,'E');
+
+
+update student
+set student_age   = '21'
+where student_id = '101';
+
+2.delete the student with id 101 from the "student" table.
+
+
+create table student(
+student_name varchar(100),
+student_id int,
+student_age int);
+
+alter table student
+add column grade varchar (100);
+
+alter table student
+rename column grade to "final grade";
+
+
+insert into student (student_name,student_id,student_age,"final grade")values
+(101,"john doe",20,'A'),
+(102,"jane smith",21,'B'),
+(103,"bob johnson",22,'C'),
+(104,"alice brown",23,'D'),
+(105,"charlie davis",24,'E');
+
+
+update student
+set student_age   = '21'
+where student_id = '101';
+
+delete from student where student_id = '101';
+
+3.retrieve all student_age > 19 or older.
+
+create table student(
+student_name varchar(100),
+student_id int,
+student_age int);
+
+alter table student
+add column grade varchar (100);
+
+alter table student
+rename column grade to "final grade";
+
+
+insert into student (student_name,student_id,student_age,"final grade")values
+(101,"john doe",20,'A'),
+(102,"jane smith",21,'B'),
+(103,"bob johnson",22,'C'),
+(104,"alice brown",23,'D'),
+(105,"charlie davis",24,'E');
+
+
+update student
+set student_age   = '21'
+where student_id = '101';
+
+delete from student where student_id = '101';
+
+select * from student where student_age > 19;
+
+4.retrieve student_name " bob johnson","alice brown" .
+
+create table student(
+student_name varchar(100),
+student_id int,
+student_age int);
+
+alter table student
+add column grade varchar (100);
+
+alter table student
+rename column grade to "final grade";
+
+
+insert into student (student_name,student_id,student_age,"final grade")values
+(101,"john doe",20,'A'),
+(102,"jane smith",21,'B'),
+(103,"bob johnson",22,'C'),
+(104,"alice brown",23,'D'),
+(105,"charlie davis",24,'E');
+
+select * from student where student_name in ("bob johnson","alice brown");
+
+5.retrieve students with gardes 'A' or 'B' and aged 20 or older.
+
+create table student(
+student_name varchar(100),
+student_id int,
+student_age int);
+
+alter table student
+add column final grade varchar (100);
+
+insert into student (student_name,student_id,student_age,"final grade")values
+(101,"john doe",20,'A'),
+(102,"jane smith",21,'B'),
+(103,"bob johnson",22,'C'),
+(104,"alice brown",23,'D'),
+(105,"charlie davis",24,'E');
+
+
+
+select * from students where final grade = 'C' or final grade = 'B ' and student_age >=20
+
+
+
+
+
+
+
