@@ -1,2 +1,57 @@
 1.retrieve student_age between 18 and 25.
 
+create table student(
+student_name varchar(100),
+student_id int,
+student_age int);
+
+alter table student
+add column final grade varchar (100);
+
+insert into student (student_name,student_id,student_age,"final grade")values
+(101,"john doe",20,'A'),
+(102,"jane smith",21,'B'),
+(103,"bob johnson",22,'C'),
+(104,"alice brown",23,'D'),
+(105,"charlie davis",24,'E');
+
+select * from student where student_age between 18 and 25;
+
+2.retrieve student with student_age less than 18.
+
+create table student(
+student_name varchar(100),
+student_id int,
+student_age int);
+
+alter table student
+add column final grade varchar (100);
+
+insert into student (student_name,student_id,student_age,"final grade")values
+(101,"john doe",20,'A'),
+(102,"jane smith",21,'B'),
+(103,"bob johnson",22,'C'),
+(104,"alice brown",23,'D'),
+(105,"charlie davis",24,'E');
+
+select  * from  student where student_age < 18;
+
+
+3.retrieve student with final_grade greater than 'C'.
+create table student(
+student_name varchar(100),
+student_id int,
+student_age int);
+
+alter table student
+add column final grade varchar (100);
+
+insert into student (student_name,student_id,student_age,"final grade")values
+(101,"john doe",20,'A'),
+(102,"jane smith",21,'B'),
+(103,"bob johnson",22,'C'),
+(104,"alice brown",23,'D'),
+(105,"charlie davis",24,'E');
+
+select * from student where final_grade > C;
+
