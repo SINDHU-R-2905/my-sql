@@ -1,0 +1,27 @@
+1.inner join :
+
+create table department(
+  dept_id int ,
+  dept_name varchar(100),
+dept_zone varchar(100)
+);
+
+insert into department(dept_id,dept_name,dept_zone)values
+(1,'operations','north'),
+(2,'finance','south'),
+(3,'sales','east');
+
+
+create table employee(
+  emp_id int ,
+dept_id int,
+  emp_name varchar(100),
+
+);
+
+insert into employee (emp_id,dept_id,emp_name)values
+(101,2,'sujeet singh'),
+(102,4,'prabhu subramanian'),
+(103,3,'rishav upadhyay');
+
+
