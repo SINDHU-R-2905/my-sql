@@ -1,0 +1,20 @@
+1.CREATE TABLE Student ( 
+    Studentid INTEGER CONSTRAINT stud_sid_pk PRIMARY KEY,
+    FName VARCHAR2(10), 
+    ContactNo NUMBER (10));
+
+
+    insert into student(Studentid,FName,ContactNo)values
+    (1001,'john',8754212356),
+    (1002,'jack',7486578956);
+
+
+2.CREATE TABLE Marks (
+    CourseId INTEGER, 
+    StudentId INTEGER CONSTRAINT marks_sid_fk REFERENCES Student (StudentId), 
+    MarksScored DECIMAL (5,2));
+
+    
+    insert into marks(CourseId,StudentId,MarksScored)values
+    (801,1001,79),
+(802,1002,90.75);
