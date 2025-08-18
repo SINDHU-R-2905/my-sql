@@ -1,0 +1,1 @@
+Grouping in SQL is done using the GROUP BY clause. It's used to group rows that have the same values in one or more columns into summary rows — like totals, averages, or counts.
