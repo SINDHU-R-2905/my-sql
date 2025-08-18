@@ -1,0 +1,5 @@
+Aggregate functions summarize data.
+
+They return a single value for a group or the entire table.
+
+Often used with GROUP BY to summarize groups.
