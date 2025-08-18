@@ -1,0 +1,33 @@
+Joins are used to combine rows from two or more tables based on a related column between them. This is super useful when your data is spread across multiple tables but you want to see it together.
+
+  1.inner join:
+
+Returns only the rows where there is a match in both tables.
+
+If a row in one table doesn’t have a matching row in the other, it’s excluded.
+
+  2.left join:
+
+  Returns all rows from the left table, plus matched rows from the right table.
+
+If there’s no match, the right table columns return NULL.
+
+  3.right join:
+
+Returns all rows from the right table, plus matched rows from the left table.
+
+If no match, left table columns return NULL.
+
+  4.FULL JOIN (or FULL OUTER JOIN)
+
+Returns all rows from both tables.
+
+Rows without matches in the other table will have NULLs in the missing side.
+
+  5. CROSS JOIN
+
+Returns the Cartesian product of both tables (every row from the first table combined with every row from the second).
+
+Be careful, this can produce a huge number of rows!
+
+  
