@@ -1,0 +1,28 @@
+1.create database sindhu
+use sindhu
+create table cars(
+cars varchar(30),
+days varchar(30),
+cumulative_distance int
+);
+select * from cars;
+insert into cars(cars,days,cumulative_distance)values
+('car 1','day 1',50),
+('car 1','day 2',100),
+('car 1','day 3',200),
+('car 2','day 1',0),
+('car 3','day 1',0),
+('car 3','day 2',50),
+('car 3','day 3',50),
+
+('car 3','day 4',100);
+
+SELECT 
+    cars,
+    days,
+    cumulative_distance,
+    cumulative_distance 
+      - LAG(cumulative_distance, 1, 0) 
+        OVER (PARTITION BY cars ORDER BY days) AS actual_distance
+FROM cars;
+
