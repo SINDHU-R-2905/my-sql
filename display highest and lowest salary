@@ -3,13 +3,20 @@ use bhuvana
 create table student(
 id int,
 name varchar(20),
-dept int,
+dept varchar(50),
 salary int
 )
 select * from student
 insert into student (id,name,dept,salary)values
+(1,'Alexander','admin',6500),
+(2,'Leo','Finance',7000),
+(3,'Robin','It',2000),
+(4,'Ali','It',4000),
+(5,'Maria','It',6000),
+(6,'Alice','Admin',5000),
+(7,'Sebastian','Hr',3000),
 (8,'Emma',278,4000),
-(9,'john',420,4500),
+(9,'john',420,4500)
 (10,'kabir',300,8000);
 SELECT 
     MAX(salary) AS HighestSalary,
