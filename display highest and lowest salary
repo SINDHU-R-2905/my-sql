@@ -1,0 +1,17 @@
+1.create database bhuvana
+use bhuvana
+create table student(
+id int,
+name varchar(20),
+dept int,
+salary int
+)
+select * from student
+insert into student (id,name,dept,salary)values
+(8,'Emma',278,4000),
+(9,'john',420,4500),
+(10,'kabir',300,8000);
+SELECT 
+    MAX(salary) AS HighestSalary,
+    MIN(salary) AS LowestSalary
+FROM student;
