@@ -9,7 +9,14 @@ brand varchar(50)
 );
 select * from cars;
 insert into cars(model_id,model_name,color,brand) values
-(6,'loniq5','black','hyundai');
+(1,'leaf',;black','nissan'),
+(2,'leaf','black','nissan'),
+(3,'model s ','black','tesla'),
+(4,'model x','white','tesla'),
+(5,'loniq5','black','hyundai'),
+
+(6,'loniq5','black','hyundai')
+(7,'loniq5','white','hyundai');
 
 
 delete from cars
